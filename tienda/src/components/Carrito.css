@@ -1,0 +1,162 @@
+/* Carrito.css */
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+  
+  .logo {
+    height: 60px; /* Ajusta según el tamaño deseado */
+    width: 300px; /* Mantiene la proporción del logo */
+    object-fit: contain; /* Asegura que el logo no se deforme */
+  }
+
+  .cart-page h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: Arial;
+  }
+  
+  .cart-page button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    width: 90px;
+  }
+  
+  .cart-page button:hover {
+    background-color: rgba(255, 255, 255, 0.211);
+  }
+  
+  .cart-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los ítems se acomoden en múltiples filas */
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px;
+    gap: 15px; /* Espacio entre los elementos */
+  }
+  
+  .cart-header .back-button {
+    position: absolute;
+    right: 2%;
+    font-style: normal;
+    font-size: 14px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .cart-item h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .cart-item p {
+    color: #555;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .cart-item .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cart-item input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .cart-item button {
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart-item button:hover {
+    background-color: rgba(255, 255, 255, 0.134);
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    color: white;
+    width: 100%;
+  }
+  
+  .cart-header h1 {
+    margin: 0;
+    font-size: 50px;
+    visibility: visible;
+    color: white;
+    z-index: 100;
+    position: absolute;
+    left: 40%;
+  }
+
+  .piecarrito {
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    color: white;
+    position: fixed; /* Fija el footer al fondo de la ventana */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    padding: 10px 20px; /* Espaciado interno para más estética */
+    text-align: center; /* Centrar contenido del footer */
+    z-index: 100; /* Mantén el footer sobre otros elementos */
+}
+
+.piecarrito .cart-total {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.piecarrito .finalizar-compra {
+    margin: 0 auto;
+    width: auto; /* Para que el botón no ocupe toda la pantalla */
+    font-style: normal;
+}
+

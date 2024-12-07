@@ -1,0 +1,277 @@
+.admin-products-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.admin-products-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    color: white;
+}
+
+.logo {
+    height: 60px; /* Ajusta según el tamaño deseado */
+    width: 300px; /* Mantiene la proporción del logo */
+    object-fit: contain; /* Asegura que el logo no se deforme */
+    align-self: center;
+}
+
+.title-gestor{
+    color: #FFC220;
+}
+
+.admin-products-page header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.admin-products-page header button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.separator {
+    border: none;
+    height: 1px; /* El grosor de la línea */
+    background-color: #ccc; /* Color de la línea */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+  }
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Espaciado interno opcional para los bordes */
+  }
+
+  .sidebar {
+    width: 250px;
+    background-color: white;
+    flex-direction: column;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 30px;
+  }
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    background-color: #f9f9f9;
+    flex-grow: 1; /* Asegura que la lista de productos ocupe el espacio disponible */
+}
+
+.product-card-admin {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-admin img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.product-card-admin h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-card-admin p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.product-card-admin button {
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card-admin button:hover {
+    background-color: rgba(126, 207, 12, 0.788);
+}
+
+.product-card-admin .edit-button {
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    margin-right: 10px;
+}
+
+.product-card-admin .edit-button:hover {
+    background-color: rgba(126, 207, 12, 0.764);
+}
+
+.product-card-admin .delete-button {
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+}
+
+.product-card-admin .delete-button:hover {
+    background-color: rgba(126, 207, 12, 0.807);
+}
+
+.add-product-button:hover {
+    background-color: rgba(126, 207, 12, 0.608);
+}
+
+.add-product-button {
+    padding: 12px 24px;
+    background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-product-button:hover {
+    background-color: rgba(126, 207, 12, 0.83);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Más sombra */
+    transform: translateY(-2px); /* Efecto flotante */
+}
+
+.add-product-button:active {
+    background-color: rgba(126, 207, 12, 0.422);
+    transform: translateY(1px); /* Pulsación */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.center-button {
+    text-align: center;
+}
+
+.price-filters {
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.price-filters input{
+border-radius: 25px;
+padding: 10px;
+max-width: 110px;
+border: 1px solid #ccc;
+}
+
+.price-filters ::placeholder{
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+}
+
+.filter-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 300px;
+  }
+
+.filter-date {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.filter-group input {
+    width: 50%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: text;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filter-group input::placeholder {
+    color: black;
+    font-style: normal;
+}
+
+.filter-group input:focus {
+    border-color: #005bb5;
+    box-shadow: 0 0 8px rgba(0, 91, 181, 0.2);
+}
+
+.price-range input {
+    margin-left: 5px;
+}
+
+.filter-group select {
+    width: 50%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #555;
+    appearance: none; /* Para ocultar el estilo predeterminado del navegador */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23555" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.filter-group select:hover {
+    border-color: #005bb5;
+    box-shadow: 0 0 8px rgba(0, 91, 181, 0.2);
+}
+
+.filter-group select:focus {
+    border-color: #004494;
+    box-shadow: 0 0 10px rgba(0, 68, 148, 0.3);
+    color: #333;
+}
+
+.filter-group select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #555;
+    font-size: 14px;
+}
+
+.eliminar-button {
+    margin-left: 5px;
+}

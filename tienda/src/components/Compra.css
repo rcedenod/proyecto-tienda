@@ -1,0 +1,49 @@
+.compra-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9; /* Fondo claro para contraste */
+}
+
+.compra-container {
+  text-align: center;
+  background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.compra-container h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.compra-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.back-button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 50%;
+}
+
+.back-button:hover {
+  background-color: #ffffff5e;
+  transform: scale(1.05);
+}

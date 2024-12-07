@@ -1,0 +1,87 @@
+.login-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Contenedor del formulario */
+.login-form {
+  background: linear-gradient(45deg, rgba(126, 207, 12, 0.871), rgba(12, 126, 207));
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Estilo para etiquetas */
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+/* Inputs del formulario */
+.login-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  margin-left: 0;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+/* Botón de inicio de sesión */
+.login-form button[type="submit"] {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #ffffff3d;
+  transform: scale(1.05);
+}
+
+/* Mensaje de error */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el texto debajo del botón */
+.login-form p {
+  font-size: 14px;
+  color: #555;
+}
+
+.login-form p button {
+  background: none;
+  border: none;
+  color: #005bb5;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form p button:hover {
+  text-decoration: underline;
+}
